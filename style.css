@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-size: 100%;
+}
+
+/*Cabeçalho*/
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 100px;
+    background-color: grey;
+}
+
+.item-menu {
+    padding: 15px;
+    gap: 10px;
+}
+
+.logo {
+    height: 100px;
+}
+
+/*Corpo da página*/
+
+.area-principal {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid grey;
+    padding:50px;
+    background: orange;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.formulario {
+    text-align: center;
+    padding: 30px;
+    height: 420px;
+    background: grey;
+    position: relative;
+    box-shadow: 2px 2px 5px;
+    border-radius: 10px;
+}
+
+div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.container input {
+    margin: 15px 15px;
+    width: calc(100% - 15px);
+    height: 50px;
+    margin: 10px;
+    width: 400px;
+    border: none;
+    background-color: #edeede;
+}
+
+.container ::placeholder {
+    padding: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container:hover ::placeholder {
+    opacity: 1;
+}
+
+button {
+    margin: 40px 0;
+    margin-top: 10px;
+
+    width: 200px;
+    height: 50px;
+
+    background: #ffb800;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.rodape {
+    padding: 45px;
+    border-top: 2px solid grey;
+    text-align: center;
+    background: grey;
+}
